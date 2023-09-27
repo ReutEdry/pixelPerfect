@@ -1,13 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import { Route, HashRouter as Router, Routes } from 'react-router-dom'
+import './assets/style/main.scss'
+import { HomePage } from './pages/HomePage'
+import { AppHeader } from './comp/AppHeader'
+
 
 function App() {
 
   return (
-    <>
-<h1>hey</h1>
-    </>
+    <Router>
+      <section className='app'>
+        <AppHeader />
+        <main>
+          <Routes>
+            <Route element={<HomePage />} path='/' />
+          </Routes>
+        </main>
+      </section>
+    </Router>
   )
 }
 

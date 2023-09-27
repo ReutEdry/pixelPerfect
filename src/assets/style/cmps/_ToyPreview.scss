@@ -1,0 +1,65 @@
+.toy-preview {
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.363);
+    }
+}
+
+.label-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 20px;
+
+    .label {
+        margin: 0;
+    }
+}
+
+.details-container {
+    padding: 15px;
+}
+
+.name-container {
+    margin-top: 15px;
+
+    .toy-name {
+        margin: 0;
+    }
+
+    .toy-stock {
+        margin: 0;
+    }
+}
+
+.btn-container {
+
+    // .btn-remove,
+    // .btn-edit {
+    //     border: none;
+    //     color: #fff;
+    //     border-radius: 5px;
+    //     cursor: pointer;
+    //     padding: 5px 10px;
+
+    // }
+
+    .btn-remove {
+        @include btn($clr1); // background-color: $clr1;
+        // margin-bottom:20px;
+        // &:hover {
+        //     background-color: darken($clr1, 10%);
+        // }
+    }
+
+    .btn-edit {
+        @include btn($clr3) // background-color: $clr3;
+
+        // &:hover {
+        //     background-color: darken($clr3, 10%);
+        // }
+    }
+}

@@ -1,0 +1,20 @@
+$clr1: #fafafa;
+$clr2: #f67e7e;
+$clr3: #79c8c7;
+$clr4: #2c6269;
+$clr5: #014e56;
+$clr6: #004047;
+$clr7: #012f34;
+$clr8: #002529;
+$clr9: #291904;
+// LAYOUT
+$layoutPadding: 165px;
+
+// LAYOUT BREAKPOINTS
+$break-narrow: 600px;
+$break-normal: 960px;
+$break-wide: 1200px;
+
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;
